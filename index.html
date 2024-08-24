@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            animation: body 5s infinite;
+        }
+        .loader{
+            margin-top: 15%;
+            margin-left: 40%;
+            border-radius: 50%;
+            border: 15px solid gray;
+            border-top: 15px solid black;
+            height: 200px;
+            width: 200px;
+            animation: loader infinite 1.5s ;
+        }
+        @keyframes loader {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes body {
+            25%{
+                background: linear-gradient(45deg, lightseagreen, blue, purple);
+                background-repeat: no-repeat;
+            }
+            50%{
+                background: linear-gradient(60deg, salmon, blue, pink);
+                background-repeat: no-repeat;
+            }
+            75%{
+                background: linear-gradient(75deg, green, yellow, lightgreen);
+                background-repeat: no-repeat;
+            }
+            100%{
+                background: linear-gradient(90deg, lightseagreen, blue, purple);
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
